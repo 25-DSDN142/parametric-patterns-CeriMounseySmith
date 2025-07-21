@@ -44,7 +44,7 @@ ellipse(watermelonX,watermelonY,lightgreenSize);
 
 fill(219,97,97);//pink
 ellipse(watermelonX,watermelonY,pinkSize);
-
+//testing if this updates on folder
 //seeds
 fill(0,0,0)
 ellipse(watermelonX,watermelonY-20,5)//middletop seed
