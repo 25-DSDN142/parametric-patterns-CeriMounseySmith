@@ -4,7 +4,7 @@ let rect_height = 30;
 
 
 function setup_wallpaper(pWallpaper) {
-  pWallpaper.output_mode(DEVELOP_GLYPH);
+  pWallpaper.output_mode(DEVELOP_GLYPH);   ///can switch between this and one below to see all tiles together
   //pWallpaper.output_mode(GRID_WALLPAPER);
   
   pWallpaper.resolution(FIT_TO_SCREEN);
@@ -13,12 +13,12 @@ function setup_wallpaper(pWallpaper) {
   //Grid settings
   pWallpaper.grid_settings.cell_width  = 200;
   pWallpaper.grid_settings.cell_height = 200;
-  pWallpaper.grid_settings.row_offset  = 50;
+  pWallpaper.grid_settings.row_offset  = 50; //can change to 0 so they perfectly align like tiles, or 150 to be layed like bricks
 }
 
 function wallpaper_background() {
   background(240, 255, 240); //light honeydew green colour
-}
+}                            // change above for different background colour
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
   rect(40 ,40, rect_width, rect_height);
