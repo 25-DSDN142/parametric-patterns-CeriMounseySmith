@@ -9,6 +9,7 @@ let watermelonY = 130;
 let lightgreenSize = 90;
 let pinkSize = 80;
 let bigseedSize = 10;
+
 //let darkGreen = 21,114,65
 
 
@@ -46,15 +47,30 @@ fill(219,97,97);//pink
 ellipse(watermelonX,watermelonY,pinkSize);
 //testing if this updates on folder
 //seeds
-fill(0,0,0)
+fill(0,0,0)//blACK
 ellipse(watermelonX,watermelonY-20,5)//middletop seed
+fill(0,0,0)
+beginShape();
+vertex(117.5,110)
+vertex(120,118)
+vertex(122.5,110)
+endShape(CLOSE);
 
-ellipse(watermelonX,watermelonY+20,5)
+fill(0,0,0)//blACK
+ellipse(watermelonX,watermelonY+20,5)//middle btm seed
+fill(0,0,0)
+beginShape();
+vertex(117.5,150)
+vertex(120,140)
+vertex(122.5,150)
+endShape(CLOSE);
 
-ellipse(watermelonX+20,watermelonY,5)
 
+fill(0,0,0)//blACK
+ellipse(watermelonX+20,watermelonY,5) // right seed
 
-
+fill(0,0,0)//blACK
+ellipse(watermelonX-20,watermelonY,5) //left seed
 
 
 }
