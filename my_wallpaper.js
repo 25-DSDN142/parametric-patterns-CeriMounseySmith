@@ -6,6 +6,7 @@ let centerX = 100;
 let centerY = 100;
 let watermelonX = 120;
 let watermelonY = 130;
+let darkgreenSize = 100;
 let lightgreenSize = 90;
 let pinkSize = 80;
 let bigseedSize = 10;
@@ -34,43 +35,76 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
  
 //rect(40 ,40, rect_width, rect_height);
 
-//watermelon body
+//watermelon body ////ORIGINAL/////
 strokeWeight(1.5)
 fill(21,114,65);//dark green
-ellipse(centerX+20,centerY+30,100);
+ellipse(centerX+20,centerY+30,darkgreenSize);
 
 strokeWeight(0);
 fill(117,184,85);//light green
 ellipse(watermelonX,watermelonY,lightgreenSize);
 
+strokeWeight(0);
 fill(219,97,97);//pink
 ellipse(watermelonX,watermelonY,pinkSize);
+
+
+//watermelon bigger
+strokeWeight(1.5)
+fill(21,114,65);//dark green
+ellipse(centerX+20,centerY+30,darkgreenSize+50);
+
+strokeWeight(0);
+fill(117,184,85);//light green
+ellipse(watermelonX,watermelonY,lightgreenSize);
+
+strokeWeight(0);
+fill(219,97,97);//pink
+ellipse(watermelonX,watermelonY,pinkSize-40);
+
+
+
+
+
 //testing if this updates on folder
-//seeds
-fill(0,0,0)//blACK
-ellipse(watermelonX,watermelonY-20,5)//middletop seed
-fill(0,0,0)
-beginShape();
-vertex(117.5,110)
-vertex(120,118)
-vertex(122.5,110)
-endShape(CLOSE);
-
-fill(0,0,0)//blACK
-ellipse(watermelonX,watermelonY+20,5)//middle btm seed
-fill(0,0,0)
-beginShape();
-vertex(117.5,150)
-vertex(120,140)
-vertex(122.5,150)
-endShape(CLOSE);
 
 
-fill(0,0,0)//blACK
-ellipse(watermelonX+20,watermelonY,5) // right seed
 
-fill(0,0,0)//blACK
-ellipse(watermelonX-20,watermelonY,5) //left seed
+
+
+// //seeds
+// fill(0,0,0)//blACK
+// ellipse(watermelonX,watermelonY-20,5)//middletop seed
+// fill(0,0,0)
+// beginShape();
+// vertex(117.5,110)
+// vertex(120,118)
+// vertex(122.5,110)
+// endShape(CLOSE);
+
+// fill(0,0,0)//blACK
+// ellipse(watermelonX,watermelonY+20,5)//middle btm seed ellipse
+// fill(0,0,0)                         //middle btm seed triangle
+// beginShape();
+// vertex(117.5,150)
+// vertex(120,142)
+// vertex(122.5,150)
+// endShape(CLOSE);
+
+
+// fill(0,0,0)//blACK
+// ellipse(watermelonX+20,watermelonY,5) // right seed ellipse
+// // fill(255)                         //right seed triangle
+// // beginShape();
+// // vertex(117.5,150)
+// // vertex(120,140)
+// // vertex(122.5,150)
+// // endShape(CLOSE);
+
+
+
+// fill(0,0,0)//blACK
+// ellipse(watermelonX-20,watermelonY,5) //left seed
 
 
 }
