@@ -2,6 +2,14 @@
 let rect_width  = 20;
 let rect_height = 30;
 
+let centerX = 100;
+let centerY = 100;
+let watermelonX = 120;
+let watermelonY = 130;
+let lightgreenSize = 90;
+let pinkSize = 80;
+//let darkGreen = 21,114,65
+
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(DEVELOP_GLYPH);   ///can switch between this and one below to see all tiles together
@@ -21,5 +29,31 @@ function wallpaper_background() {
 }                            // change above for different background colour
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
-  rect(40 ,40, rect_width, rect_height);
+ 
+//rect(40 ,40, rect_width, rect_height);
+
+//watermelon body
+strokeWeight(1.5)
+fill(21,114,65);//dark green
+ellipse(centerX+20,centerY+30,100);
+
+strokeWeight(0);
+fill(117,184,85);//light green
+ellipse(watermelonX,watermelonY,lightgreenSize);
+
+fill(219,97,97);//pink
+ellipse(watermelonX,watermelonY,pinkSize);
+
+//seeds
+fill(0,0,0)
+ellipse(watermelonX,watermelonY-20,5)//middletop seed
+
+ellipse(watermelonX,watermelonY+20,5)
+
+
+
+
+
+
+
 }
