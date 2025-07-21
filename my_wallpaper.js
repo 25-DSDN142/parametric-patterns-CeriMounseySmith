@@ -8,6 +8,7 @@ let watermelonX = 120;
 let watermelonY = 130;
 let lightgreenSize = 90;
 let pinkSize = 80;
+let bigseedSize = 10;
 //let darkGreen = 21,114,65
 
 
@@ -25,7 +26,7 @@ function setup_wallpaper(pWallpaper) {
 }
 
 function wallpaper_background() {
-  background(240, 255, 240); //light honeydew green colour
+  background(255, 182, 193); //light honeydew green colour
 }                            // change above for different background colour
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
@@ -50,7 +51,7 @@ ellipse(watermelonX,watermelonY-20,5)//middletop seed
 
 ellipse(watermelonX,watermelonY+20,5)
 
-
+ellipse(watermelonX+20,watermelonY,5)
 
 
 
