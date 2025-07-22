@@ -4,12 +4,26 @@ let rect_height = 30;
 
 let centerX = 100;
 let centerY = 100;
+
+let secondcenterA = 20
+let secondcenterB = 20
+
 let watermelonX = 120;
 let watermelonY = 130;
 let darkgreenSize = 120;
 let lightgreenSize = 80;
 let pinkSize = 50;
 let bigseedSize = 10;
+let darkpinkSize = 150
+
+//ifstatement/conditionals
+
+function WaterMelon (){
+
+
+}
+
+
 
 //let darkGreen = 21,114,65
 
@@ -107,6 +121,11 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
 //ellipse(watermelonX-40,watermelonY-30,5) //left seed
 
 //watermelon body ////new/////
+stroke(21,114,65)
+strokeWeight(3)
+fill(173,56,56);//light green
+ellipse(centerX,centerY,darkpinkSize);
+
 stroke(117,184,85)
 strokeWeight(3)
 fill(21,114,65);//dark green
