@@ -2,19 +2,19 @@
 let centerX = 100; //location for watermelon x axis
 let centerY = 100; //location for watermelon y axis
 
-let brcX = 180 // bottom right corner x location  ///change this to change big pink circle location
-let brcY = 200 // bottom right corner y location
+let brcX = 180;// bottom right corner x location  ///change this to change big pink circle location
+let brcY = 200; // bottom right corner y location
 
-let seedtopX=100 ///*center watermelon seed locations
-let seedtopY=85 ///*
-let seedleftX=85 ///*
-let seedleftY=100 ///*
-let seeddownX=100 ///*
-let seeddownY=115 ///*
-let seedrightX=115 ///*
-let seedrightY=100 //*
+let seedtopX=100; ///*center watermelon seed locations
+let seedtopY=85; ///*
+let seedleftX=85; ///*
+let seedleftY=100; ///*
+let seeddownX=100; ///*
+let seeddownY=115; ///*
+let seedrightX=115; ///*
+let seedrightY=100; //*
 
-let darkgreenSize = 125; //change this above 80 under 80 for new pattern
+let darkgreenSize = 125; //change this above 80 or under 80 for diff pattern
 let lightgreenSize = 95; //change this to above 90 or below 90 for diff pattern
 let pinkSize = 45; //change this to above or below 50 for diff pattern
 
@@ -22,8 +22,8 @@ function setup_wallpaper(pWallpaper) {
   //pWallpaper.output_mode(DEVELOP_GLYPH);   ///can switch between this and one below to see all tiles together
   pWallpaper.output_mode(GRID_WALLPAPER);
   
-  pWallpaper.resolution(FIT_TO_SCREEN);
-  pWallpaper.show_guide(true); //set this to false when you're ready to print
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
 
   //Grid settings
   pWallpaper.grid_settings.cell_width  = 200;
@@ -72,30 +72,30 @@ ellipse(200,200,180,180)//big dark green circle
 fill(219,97,97);
 ellipse(200,200,160,160);//big pink circle
 fill(0,0,0)
-ellipse(brcX,brcY,seedsize1X,seedsize1Y)//seed
-ellipse(brcX,brcY,50,10)//seed
-ellipse(brcX,brcY,10,50)//seed
-ellipse(brcX,brcY,50,10)//seed
+ellipse(brcX,brcY,seedsize1X,seedsize1Y);//seed
+ellipse(brcX,brcY,50,10);//seed
+ellipse(brcX,brcY,10,50);//seed
+ellipse(brcX,brcY,50,10);//seed
 }
 
 if(lightgreenSize >90){
-  fill(117,184,85)
-ellipse(50,50,30,30)
-ellipse(50,50,10,10)
+  fill(117,184,85);
+ellipse(50,50,30,30);
+ellipse(50,50,10,10);
 }
 else{
-fill(21,114,65)
-ellipse(50,50,30,10)
-ellipse(50,50,10,30)
+fill(21,114,65);
+ellipse(50,50,30,10);
+ellipse(50,50,10,30);
 }
 
 if(pinkSize <50){
-fill(21,114,65)
-ellipse(160,160,170,170)
+fill(21,114,65);
+ellipse(160,160,170,170);
 }
 else{
-fill(0,0,0)
-ellipse(180,150,10,20)
+fill(0,0,0);
+ellipse(180,150,10,20);
 }
 }
 

@@ -10,23 +10,37 @@ Your final settings.txt will look something like this when you are finished:
 Wallpaper 1:
 
 //your parameter variables go here!
-let rect_width  = 20;
-let rect_height = 20;
-let paramter1 = 10;
-let paramter2 = true;
-let paramter3 = 50; 
-let paramter4 = 0; 
-let paramter5 = 60;
+let centerX = 100; //location for watermelon x axis
+let centerY = 100; //location for watermelon y axis
+
+let brcX = 180;// bottom right corner x location  ///change this to change big pink circle location
+let brcY = 200; // bottom right corner y location
+
+let seedtopX=100; ///*center watermelon seed locations
+let seedtopY=85; ///*
+let seedleftX=85; ///*
+let seedleftY=100; ///*
+let seeddownX=100; ///*
+let seeddownY=115; ///*
+let seedrightX=115; ///*
+let seedrightY=100; //*
+
+let darkgreenSize = 125; //change this above 80 or under 80 for diff pattern
+let lightgreenSize = 95; //change this to above 90 or below 90 for diff pattern
+let pinkSize = 45; //change this to above or below 50 for diff pattern
+
 
 function setup_wallpaper(pWallpaper) {
+  //pWallpaper.output_mode(DEVELOP_GLYPH);   ///can switch between this and one below to see all tiles together
   pWallpaper.output_mode(GRID_WALLPAPER);
+  
   pWallpaper.resolution(NINE_LANDSCAPE);
   pWallpaper.show_guide(false); //set this to false when you're ready to print
 
   //Grid settings
-  pWallpaper.grid_settings.cell_width  = 100;
-  pWallpaper.grid_settings.cell_height = 100;
-  pWallpaper.grid_settings.row_offset  = 50;
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 50; //can change to 0 so they perfectly align like tiles, or 150 to be layed like bricks
 }
 
 /////////////////////////////////
