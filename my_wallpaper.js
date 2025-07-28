@@ -1,46 +1,22 @@
 //your parameter variables go here!
-let centerX = 100;
-let centerY = 100;
-let tlcX = 0 //top left corner x location
-let tlcY = 0 //top left corner y location
+let centerX = 100; //location for watermelon x axis
+let centerY = 100; //location for watermelon y axis
 
-let trcX = 200 //top left corner x location
-let trcY = 0 //top left corner y location
+let brcX = 180 // bottom right corner x location  ///change this to change big pink circle location
+let brcY = 200 // bottom right corner y location
 
-let blcX = 0 //bottom left corner x location
-let blcY = 200 //bottom left corner y location
+let seedtopX=100 ///*center watermelon seed locations
+let seedtopY=85 ///*
+let seedleftX=85 ///*
+let seedleftY=100 ///*
+let seeddownX=100 ///*
+let seeddownY=115 ///*
+let seedrightX=115 ///*
+let seedrightY=100 //*
 
-let brcX = 200 // bottom right corner x location
-let brcY = 200 // bottomright corner y location
-
-let watermelonX = 120;
-let watermelonY = 130;
-let darkgreenSize = 70;
-let lightgreenSize = 85;
-let pinkSize = 70;
-
-function WaterMelon (){
-//watermelon body 
-strokeWeight(2)
-stroke(0,0,0,)//black
-fill(21,114,65);//dark green
-ellipse(centerX,centerY,darkgreenSize);
-
-strokeWeight(0);
-fill(117,184,85);//light green
-ellipse(centerX,centerY,lightgreenSize);
-
-fill(219,97,97);//pink
-ellipse(centerX,centerY,pinkSize);
-
-//seeds
-fill(0,0,0)//black
-ellipse(centerX,centerY-15,5,10)//middletop seed
-ellipse(centerX-15,centerY,10,5)//left seed
-ellipse(centerX+15,centerY,10,5)//right seed
-ellipse(centerX,centerY+15,5,10)//bttm seed
-
-}
+let darkgreenSize = 125; //change this above 80 under 80 for new pattern
+let lightgreenSize = 95; //change this to above 90 or below 90 for diff pattern
+let pinkSize = 45; //change this to above or below 50 for diff pattern
 
 function setup_wallpaper(pWallpaper) {
   //pWallpaper.output_mode(DEVELOP_GLYPH);   ///can switch between this and one below to see all tiles together
@@ -65,22 +41,24 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
 strokeWeight(2)
 stroke(0,0,0,)//black
 fill(21,114,65);//dark green
-ellipse(centerX,centerY,darkgreenSize);
+ellipse(centerX,centerY,darkgreenSize); // dark green watermelon circle
 
 strokeWeight(0);
 fill(117,184,85);//light green
-ellipse(centerX,centerY,lightgreenSize);
+ellipse(centerX,centerY,lightgreenSize); //light green watermelon circle
 
 fill(219,97,97);//pink
-ellipse(centerX,centerY,pinkSize);
+ellipse(centerX,centerY,pinkSize); //pink watermelon circle
 
 //seeds
 fill(0,0,0)//black
-ellipse(centerX,centerY-15,5,10)//middletop seed
-ellipse(centerX-15,centerY,10,5)//left seed
-ellipse(centerX+15,centerY,10,5)//right seed
-ellipse(centerX,centerY+15,5,10)//bttm seed
+ellipse(seedtopX,seedtopY,5,10)//middletop seed
+ellipse(seedleftX,seedleftY,10,5)//left seed
+ellipse(seedrightX,seedrightY,10,5)//right seed
+ellipse(seeddownX,seeddownY,5,10)//bttm seed
 
+
+//IF STATEMENTS 
 if(darkgreenSize >80){
 fill(219,97,97);
 ellipse(0,0,60,60);
@@ -94,20 +72,31 @@ ellipse(200,200,180,180)//big dark green circle
 fill(219,97,97);
 ellipse(200,200,160,160);//big pink circle
 fill(0,0,0)
-ellipse(brcX,brcY-50,10,20)
-ellipse(brcX-50,brcY,20,10)
-ellipse(brcX,brcY+50,10,20)
-ellipse(brcX+50,brcY,20,10)
-
-// fill(219,97,97);
-// ellipse(0,0,160,160);//top left circle
-// fill(0,0,0)
-// ellipse(centerX-100,centerY-50,10,20)
-// ellipse(centerX-50,centerY-100,20,10)
-
+ellipse(brcX,brcY,seedsize1X,seedsize1Y)//seed
+ellipse(brcX,brcY,50,10)//seed
+ellipse(brcX,brcY,10,50)//seed
+ellipse(brcX,brcY,50,10)//seed
 }
 
-//WaterMelon(20,20,);
+if(lightgreenSize >90){
+  fill(117,184,85)
+ellipse(50,50,30,30)
+ellipse(50,50,10,10)
+}
+else{
+fill(21,114,65)
+ellipse(50,50,30,10)
+ellipse(50,50,10,30)
+}
+
+if(pinkSize <50){
+fill(21,114,65)
+ellipse(160,160,170,170)
+}
+else{
+fill(0,0,0)
+ellipse(180,150,10,20)
+}
 }
 
 
