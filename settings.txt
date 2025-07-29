@@ -43,26 +43,326 @@ function setup_wallpaper(pWallpaper) {
   pWallpaper.grid_settings.row_offset  = 50; //can change to 0 so they perfectly align like tiles, or 150 to be layed like bricks
 }
 
+function wallpaper_background() {
+  background(255, 182, 193); //light pink
+}                            // change above for different background colour
+
+
 /////////////////////////////////
 
 Wallpaper 2:
 
 //your parameter variables go here!
-let rect_width  = 10;
-let rect_height = 10;
-let paramter1 = 20;
-let paramter2 = false;
-let paramter3 = 50; 
-let paramter4 = 80; 
-let paramter5 = 30;
+let centerX = 100; //location for watermelon x axis
+let centerY = 100; //location for watermelon y axis
+
+let brcX = 180;// bottom right corner x location  ///change this to change big pink circle location
+let brcY = 200; // bottom right corner y location
+
+let seedtopX=100; ///*center watermelon seed locations
+let seedtopY=85; ///*
+let seedleftX=85; ///*
+let seedleftY=100; ///*
+let seeddownX=100; ///*
+let seeddownY=115; ///*
+let seedrightX=115; ///*
+let seedrightY=100; //*
+
+let darkgreenSize = 105; //change this above 80 or under 80 for diff pattern
+let lightgreenSize = 65; //change this to above 90 or below 90 for diff pattern
+let pinkSize = 58; //change this to above or below 50 for diff pattern
 
 function setup_wallpaper(pWallpaper) {
+  //pWallpaper.output_mode(DEVELOP_GLYPH);   ///can switch between this and one below to see all tiles together
   pWallpaper.output_mode(GRID_WALLPAPER);
+  
   pWallpaper.resolution(NINE_LANDSCAPE);
   pWallpaper.show_guide(false); //set this to false when you're ready to print
 
   //Grid settings
-  pWallpaper.grid_settings.cell_width  = 100;
-  pWallpaper.grid_settings.cell_height = 100;
-  pWallpaper.grid_settings.row_offset  = 0;
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 150; //can change to 0 so they perfectly align like tiles, or 150 to be layed like bricks
 }
+
+function wallpaper_background() {
+  background(255, 182, 193); //light pink
+}     
+
+/////////////////////////////////
+
+Wallpaper 3:
+let centerX = 100; //location for watermelon x axis
+let centerY = 100; //location for watermelon y axis
+
+let brcX = 180;// bottom right corner x location  ///change this to change big pink circle location
+let brcY = 200; // bottom right corner y location
+
+let seedtopX=100; ///*center watermelon seed locations
+let seedtopY=85; ///*
+let seedleftX=85; ///*
+let seedleftY=100; ///*
+let seeddownX=100; ///*
+let seeddownY=115; ///*
+let seedrightX=115; ///*
+let seedrightY=100; //*
+
+let darkgreenSize = 85; //change this above 80 or under 80 for diff pattern
+let lightgreenSize = 65; //change this to above 90 or below 90 for diff pattern
+let pinkSize = 45; //change this to above or below 50 for diff pattern
+
+function setup_wallpaper(pWallpaper) {
+  //pWallpaper.output_mode(DEVELOP_GLYPH);   ///can switch between this and one below to see all tiles together
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 150; //can change to 0 so they perfectly align like tiles, or 150 to be layed like bricks
+}
+
+function wallpaper_background() {
+  background(255, 182, 193); //light pink
+}                            // change above for different background colour
+
+/////////////////////////////////
+
+Wallpaper 4:
+let centerX = 100; //location for watermelon x axis
+let centerY = 100; //location for watermelon y axis
+
+let brcX = 180;// bottom right corner x location  ///change this to change big pink circle location
+let brcY = 200; // bottom right corner y location
+
+let seedtopX=100; ///*center watermelon seed locations
+let seedtopY=85; ///*
+let seedleftX=85; ///*
+let seedleftY=100; ///*
+let seeddownX=100; ///*
+let seeddownY=115; ///*
+let seedrightX=115; ///*
+let seedrightY=100; //*
+
+let darkgreenSize = 70; //change this above 80 or under 80 for diff pattern
+let lightgreenSize = 95; //change this to above 90 or below 90 for diff pattern
+let pinkSize = 55; //change this to above or below 50 for diff pattern
+
+function setup_wallpaper(pWallpaper) {
+  //pWallpaper.output_mode(DEVELOP_GLYPH);   ///can switch between this and one below to see all tiles together
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 150; //can change to 0 so they perfectly align like tiles, or 150 to be layed like bricks
+}
+
+function wallpaper_background() {
+  background(255, 182, 193); //light pink
+}  
+
+////////////////////////////////
+
+Wallpaper 5:
+let centerX = 150; //location for watermelon x axis
+let centerY = 150; //location for watermelon y axis
+
+let brcX = 180;// bottom right corner x location  ///change this to change big pink circle location
+let brcY = 200; // bottom right corner y location
+
+let seedtopX=100; ///*center watermelon seed locations
+let seedtopY=85; ///*
+let seedleftX=85; ///*
+let seedleftY=100; ///*
+let seeddownX=100; ///*
+let seeddownY=115; ///*
+let seedrightX=115; ///*
+let seedrightY=100; //*
+
+let darkgreenSize = 70; //change this above 80 or under 80 for diff pattern
+let lightgreenSize = 95; //change this to above 90 or below 90 for diff pattern
+let pinkSize = 45; //change this to above or below 50 for diff pattern
+
+
+function setup_wallpaper(pWallpaper) {
+  //pWallpaper.output_mode(DEVELOP_GLYPH);   ///can switch between this and one below to see all tiles together
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 150; //can change to 0 so they perfectly align like tiles, or 150 to be layed like bricks
+}
+
+function wallpaper_background() {
+  background(255, 182, 193); //light pink
+}  
+
+////////////////////////////////
+
+Wallpaper 6:
+let centerX = 10; //location for watermelon x axis
+let centerY = 100; //location for watermelon y axis
+
+let brcX = 180;// bottom right corner x location  ///change this to change big pink circle location
+let brcY = 200; // bottom right corner y location
+
+let seedtopX=100; ///*center watermelon seed locations
+let seedtopY=85; ///*
+let seedleftX=85; ///*
+let seedleftY=100; ///*
+let seeddownX=100; ///*
+let seeddownY=115; ///*
+let seedrightX=115; ///*
+let seedrightY=100; //*
+
+let darkgreenSize = 10; //change this above 80 or under 80 for diff pattern
+let lightgreenSize = 155; //change this to above 90 or below 90 for diff pattern
+let pinkSize = 45; //change this to above or below 50 for diff pattern
+
+function setup_wallpaper(pWallpaper) {
+  //pWallpaper.output_mode(DEVELOP_GLYPH);   ///can switch between this and one below to see all tiles together
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 150; //can change to 0 so they perfectly align like tiles, or 150 to be layed like bricks
+}
+
+function wallpaper_background() {
+  background(255, 182, 193); //light pink
+}    
+
+////////////////////////////////
+
+Wallpaper 7:
+
+let centerX = 100; //location for watermelon x axis
+let centerY = 100; //location for watermelon y axis
+
+let brcX = 180;// bottom right corner x location  ///change this to change big pink circle location
+let brcY = 200; // bottom right corner y location
+
+let seedtopX=100; ///*center watermelon seed locations
+let seedtopY=85; ///*
+let seedleftX=85; ///*
+let seedleftY=100; ///*
+let seeddownX=100; ///*
+let seeddownY=115; ///*
+let seedrightX=115; ///*
+let seedrightY=100; //*
+
+let darkgreenSize = 210; //change this above 80 or under 80 for diff pattern
+let lightgreenSize = 155; //change this to above 90 or below 90 for diff pattern
+let pinkSize = 85; //change this to above or below 50 for diff pattern
+
+function setup_wallpaper(pWallpaper) {
+  //pWallpaper.output_mode(DEVELOP_GLYPH);   ///can switch between this and one below to see all tiles together
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 150; //can change to 0 so they perfectly align like tiles, or 150 to be layed like bricks
+}
+
+function wallpaper_background() {
+  background(255, 182, 193); //light pink
+}  
+
+////////////////////////////////
+
+Wallpaper 8:
+
+let centerX = 100; //location for watermelon x axis
+let centerY = 100; //location for watermelon y axis
+
+let brcX = 180;// bottom right corner x location  ///change this to change big pink circle location
+let brcY = 200; // bottom right corner y location
+
+let seedtopX=100; ///*center watermelon seed locations
+let seedtopY=85; ///*
+let seedleftX=85; ///*
+let seedleftY=100; ///*
+let seeddownX=100; ///*
+let seeddownY=115; ///*
+let seedrightX=115; ///*
+let seedrightY=100; //*
+
+let darkgreenSize = 175; //change this above 80 or under 80 for diff pattern
+let lightgreenSize = 85; //change this to above 90 or below 90 for diff pattern
+let pinkSize = 140; //change this to above or below 50 for diff pattern
+
+function setup_wallpaper(pWallpaper) {
+  //pWallpaper.output_mode(DEVELOP_GLYPH);   ///can switch between this and one below to see all tiles together
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 150; //can change to 0 so they perfectly align like tiles, or 150 to be layed like bricks
+}
+
+function wallpaper_background() {
+  background(255, 182, 193); //light pink
+}   
+
+
+/////////////////////////////////
+
+Wallpaper 9:
+
+let centerX = 10; //location for watermelon x axis
+let centerY = 10; //location for watermelon y axis
+
+let brcX = 10;// bottom right corner x location  ///change this to change big pink circle location
+let brcY = 13; // bottom right corner y location
+
+let seedtopX=100; ///*center watermelon seed locations
+let seedtopY=85; ///*
+let seedleftX=25; ///*
+let seedleftY=100; ///*
+let seeddownX=100; ///*
+let seeddownY=115; ///*
+let seedrightX=165; ///*
+let seedrightY=100; //*
+
+let darkgreenSize = 61; //change this above 80 or under 80 for diff pattern
+let lightgreenSize = 145; //change this to above 90 or below 90 for diff pattern
+let pinkSize = 41; //change this to above or below 50 for diff pattern
+
+function setup_wallpaper(pWallpaper) {
+  //pWallpaper.output_mode(DEVELOP_GLYPH);   ///can switch between this and one below to see all tiles together
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 150; //can change to 0 so they perfectly align like tiles, or 150 to be layed like bricks
+}
+
+function wallpaper_background() {
+  background(255, 182, 193); //light pink
+}    
